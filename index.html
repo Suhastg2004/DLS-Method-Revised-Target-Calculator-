@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLS Method Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 id="heading">DLS Method Calculator</h1>
+    <div class="container">
+        <div class="input-field">
+            <label class="input-label" for="format">Format:</label>
+            <select id="format">
+                <option value="ODI">ODI</option>
+                <option value="T20">T20</option>
+            </select>
+        </div>
+        <div class="input-field">
+            <label class="input-label" for="team1Score">Team 1 Score:</label>
+            <input type="text" id="team1Score">
+        </div>
+        <div class="input-field">
+            <label class="input-label" for="team2OversRemaining">Team 2 Overs Remaining:</label>
+            <input type="text" id="team2OversRemaining">
+        </div>
+        <div class="input-field">
+            <label class="input-label" for="team2WicketsLost">Team 2 Wickets Lost:</label>
+            <input type="text" id="team2WicketsLost">
+        </div>
+        <button id="calculateButton">Calculate Target</button>
+        <div id="result"></div>
+    </div>
+</body>
+</html>
